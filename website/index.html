@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Ashish Kumar | Web Developer & Designer</title>
+    <meta name="description"
+        content="Portfolio of Ashish Kumar: web developer and designer building fast, beautiful, interactive websites.">
+    <meta name="theme-color" content="#07120f">
+    <meta property="og:title" content="Ashish Kumar | Portfolio">
+    <meta property="og:image" content="images/ashish.jpg">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%230f8b7a'/%3E%3Ctext x='32' y='43' font-family='Arial' font-weight='800' font-size='30' text-anchor='middle' fill='white'%3EAK%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,800&family=Manrope:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
+    <script>var t; try { t = localStorage.getItem("pf-theme") } catch (e) { } if (t !== "dark" && t !== "light") t = matchMedia("(prefers-color-scheme:dark)").matches ? "dark" : "light"; document.documentElement.setAttribute("data-theme", t); try { if (sessionStorage.getItem("pf-seen")) document.documentElement.classList.add("seen") } catch (e) { }</script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="pre" id="pre" aria-hidden="true">
+        <div class="pre-in">
+            <div class="pre-mark">AK</div>
+            <div class="pre-bar"><i id="preBar"></i></div>
+        </div>
+    </div>
+    <div class="aurora" aria-hidden="true"><i></i><i></i><i></i></div>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="cur" id="cur" aria-hidden="true"></div>
+    <div class="cur-ring" id="curRing" aria-hidden="true"></div>
+    <div class="prog" id="prog" aria-hidden="true"></div>
+    <div class="sample" id="sample" hidden>Sample content. Edit it from the admin website.</div>
+
+    <header class="top"><a class="logo" href="#home" aria-label="Ashish Kumar, home"><span
+                class="logo-mark">AK</span><span class="logo-t" id="logoName">Ashish Kumar</span></a><a
+            class="btn btn-sm mag" href="#contact"><span>Let’s talk</span><i class="arr"></i></a></header>
+
+    <nav class="dock" id="dock" aria-label="Main">
+        <ul>
+            <li><a href="#home" data-tip="Home"><svg viewBox="0 0 24 24">
+                        <path d="M3 11l9-8 9 8M5 10v10h5v-6h4v6h5V10" />
+                    </svg></a></li>
+            <li><a href="#about" data-tip="About"><svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="8" r="4" />
+                        <path d="M4 21c0-4.200 3.600-7 8-7s8 2.800 8 7" />
+                    </svg></a></li>
+            <li><a href="#skills" data-tip="Skills"><svg viewBox="0 0 24 24">
+                        <path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16" />
+                    </svg></a></li>
+            <li><a href="#work" data-tip="Work"><svg viewBox="0 0 24 24">
+                        <rect x="3" y="7" width="18" height="13" rx="3" />
+                        <path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18" />
+                    </svg></a></li>
+            <li><a href="#journey" data-tip="Journey"><svg viewBox="0 0 24 24">
+                        <path d="M12 21V8M12 8l-4 4M12 8l4 4M5 4h14" />
+                    </svg></a></li>
+            <li><a href="#contact" data-tip="Contact"><svg viewBox="0 0 24 24">
+                        <rect x="3" y="5" width="18" height="14" rx="3" />
+                        <path d="M3 8l9 6 9-6" />
+                    </svg></a></li>
+            <li class="sep" aria-hidden="true"></li>
+            <li><button class="theme-btn" id="themeBtn" type="button" data-tip="Theme" aria-label="Switch to dark mode"
+                    aria-pressed="false"><svg class="moon" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20.500 14.200A8.500 8.500 0 0 1 9.800 3.500a8.500 8.500 0 1 0 10.700 10.700z" />
+                    </svg><svg class="sun" viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4.200" />
+                        <path
+                            d="M12 2.500v2.200M12 19.300v2.200M2.500 12h2.200M19.300 12h2.200M5.300 5.300l1.600 1.600M17.100 17.100l1.600 1.600M5.300 18.700l1.600-1.600M17.100 6.900l1.600-1.600" />
+                    </svg></button></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        <section class="hero" id="home">
+            <div class="wrap hero-grid">
+                <div class="hero-txt">
+                    <p class="pill-s"><span class="live" id="avail"></span><span id="availT">Available for new
+                            projects</span></p>
+                    <p class="hi">Hi, I’m</p>
+                    <h1 id="hName" aria-label="Ashish Kumar"></h1>
+                    <p class="role"><span class="role-pre">I’m a</span><span class="role-win"><span class="role-list"
+                                id="roleList"></span></span></p>
+                    <p class="tag" id="hTag"></p>
+                    <div class="cta"><a class="btn mag" href="#work"><span>View my work</span><i class="arr"></i></a><a
+                            class="btn btn-line mag" id="resumeBtn" href="#contact"><span>Get in touch</span></a></div>
+                    <ul class="socials" id="heroSocial"></ul>
+                </div>
+                <div class="hero-art">
+                    <div class="frame" id="frame">
+                        <div class="ring"></div>
+                        <div class="arch"><img id="hPhoto" src="images/ashish.jpg" alt="Portrait of Ashish Kumar"
+                                width="900" height="1599" fetchpriority="high"></div>
+                    </div>
+                    <span class="chip c1">&lt;/&gt; Code</span><span class="chip c2">✦ Design</span><span
+                        class="chip c3">⚡ Fast</span>
+                </div>
+            </div><a class="cue" href="#about" aria-label="Scroll down"><span></span></a>
+        </section>
+
+        <div class="marquee" aria-hidden="true">
+            <div class="mq" id="mq"></div>
+        </div>
+
+        <section id="about">
+            <div class="wrap about">
+                <div class="rv">
+                    <p class="eyebrow">About me</p>
+                    <h2 class="scr" id="aTitle">Designer’s eye, developer’s brain.</h2>
+                </div>
+                <div class="about-body">
+                    <div class="rv" id="aText"></div>
+                    <ul class="facts rv" id="facts"></ul>
+                    <div class="stats" id="stats"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="alt" id="skills">
+            <div class="wrap">
+                <header class="head rv">
+                    <p class="eyebrow">Skills</p>
+                    <h2 class="scr">What I work with</h2>
+                </header>
+                <div class="skill-grid" id="skillGrid"></div>
+            </div>
+        </section>
+
+        <section id="work">
+            <div class="wrap">
+                <header class="head rv">
+                    <p class="eyebrow">Selected work</p>
+                    <h2 class="scr">Projects I’m proud of</h2>
+                </header>
+                <div class="filters rv" id="filters" role="group" aria-label="Filter projects"></div>
+                <div class="proj-grid" id="projGrid"></div>
+            </div>
+        </section>
+
+        <section class="alt" id="journey">
+            <div class="wrap">
+                <header class="head rv">
+                    <p class="eyebrow">Journey</p>
+                    <h2 class="scr">Experience &amp; education</h2>
+                </header>
+                <div class="journey">
+                    <div>
+                        <h3 class="jh rv">Experience</h3>
+                        <ol class="tl" id="expList"></ol>
+                    </div>
+                    <div>
+                        <h3 class="jh rv">Education</h3>
+                        <ol class="tl" id="eduList"></ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="wrap">
+                <div class="contact">
+                    <div class="rv">
+                        <p class="eyebrow">Contact</p>
+                        <h2 class="big scr">Let’s build something great together.</h2>
+                        <p class="lead" id="cLead">Have a project in mind or just want to say hello? Send me a message.
+                        </p>
+                        <ul class="c-list" id="cList"></ul>
+                        <ul class="socials big" id="cSocial"></ul>
+                    </div>
+                    <form class="form rv" id="form" novalidate>
+                        <div class="fld"><input id="f-name" placeholder=" " autocomplete="name"><label for="f-name">Your
+                                name</label>
+                            <p class="err" data-for="f-name"></p>
+                        </div>
+                        <div class="fld"><input id="f-email" type="email" placeholder=" " autocomplete="email"><label
+                                for="f-email">Your email</label>
+                            <p class="err" data-for="f-email"></p>
+                        </div>
+                        <div class="fld"><textarea id="f-msg" rows="5" placeholder=" "></textarea><label
+                                for="f-msg">Your message</label>
+                            <p class="err" data-for="f-msg"></p>
+                        </div>
+                        <button class="btn mag" type="submit"><span>Send message</span><i class="arr"></i></button>
+                        <p class="ok" id="ok" role="status"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="wrap">
+            <p>© <span id="yr"></span> <span id="fName">Ashish Kumar</span>. Designed &amp; built with care.</p><a
+                href="#home" class="to-top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <dialog id="modal" aria-label="Project details">
+        <div class="m-card">
+            <button class="m-x" id="mClose" type="button" aria-label="Close"><svg viewBox="0 0 24 24">
+                    <path d="M6 6l12 12M18 6L6 18" />
+                </svg></button>
+            <div class="m-gal">
+                <div class="m-stage" id="mStage"></div>
+                <div class="m-thumbs" id="mThumbs"></div>
+            </div>
+            <div class="m-info">
+                <p class="eyebrow" id="mTags"></p>
+                <h3 id="mTitle"></h3>
+                <p id="mDesc"></p>
+                <div class="cta" id="mLinks"></div>
+            </div>
+        </div>
+    </dialog>
+
+    <script src="data/config.js"></script>
+    <script src="js/defaults.js"></script>
+    <script src="data/site-data.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
